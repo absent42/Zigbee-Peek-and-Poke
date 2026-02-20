@@ -1,6 +1,6 @@
 # Zigbee Peek and Poke (ZPP) v4
 
-A Zigbee2MQTT external converter tool for reading, writing, scanning, and exploring manufacturer-specific cluster attributes on any Zigbee device. Originally built to peek around Aqara/Lumi devices, now configurable for any manufacturer.
+A Zigbee2MQTT external converter tool for reading, writing, scanning, and exploring manufacturer-specific cluster attributes on any Zigbee device. Originally built to poke around Aqara/Lumi devices, now configurable for any manufacturer.
 
 
 ## Installation
@@ -20,7 +20,7 @@ All settings live at the top of the file. Edit these before starting Z2M.
 
 ### `TARGET_ZIGBEE_MODEL`
 
-The Zigbee model string your device reports. Find this on the device's "About" page in the Z2M frontend, or in `devices.yaml`. This must match exactly.
+The Zigbee model string your device reports. Find this on the device's "About" page in the Z2M frontend.
 
 ```js
 const TARGET_ZIGBEE_MODEL = 'lumi.plug.aeu002';
