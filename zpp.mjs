@@ -1,5 +1,5 @@
 /**
- * Zigbee Peek and Poke (ZPP) v4.0
+ * Zigbee Peek and Poke (ZPP) v1.0
  *
  * Tool to read, write, scan, and compare manufacturer-specific cluster attributes
  * on any Zigbee device. Configure the target device model, cluster, and manufacturer
@@ -221,14 +221,22 @@ function appendWriteHistory(meta, entry) {
 }
 
 const DATA_TYPES = {
+    bo: 0x10,
     uint8: 0x20,
     uint16: 0x21,
     uint32: 0x23,
     int8: 0x28,
     int16: 0x29,
     int32: 0x2b,
+    enum8: 0x30,
+    enum16: 0x31,
+    float2: 0x38,
+    float4: 0x39,
+    float8: 0x3a,
     buf: 0x41,
     str: 0x42,
+    lbuf: 0x43,
+    lstr: 0x44,
 };
 
 function inferTypeAndValue(hexStr) {
