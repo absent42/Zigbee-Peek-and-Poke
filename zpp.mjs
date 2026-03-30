@@ -1,5 +1,5 @@
 /**
- * Zigbee Peek and Poke (ZPP) v1.0
+ * Zigbee Peek and Poke (ZPP) v4.0
  *
  * Tool to read, write, scan, and compare manufacturer-specific cluster attributes
  * on any Zigbee device. Configure the target device model, cluster, and manufacturer
